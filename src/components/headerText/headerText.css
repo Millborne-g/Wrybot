@@ -1,0 +1,140 @@
+.Header_Text{
+    display: flex;
+    justify-content: center;
+    height: 25vh;
+}
+
+.Header_Text_Inner{
+    margin: auto;
+    width: 90%;
+    
+}
+
+.Header_Text_Logo_Inner{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+}
+
+.Header_Text_Inner div{
+    margin: auto;
+}
+
+.LogoText{
+    font-family: var(--font-family-RMono);
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 52px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.logoPhoto{
+    height:120px;
+
+}
+
+.Logo_name{
+    font-family: var(--font-family-R);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 100px;
+    letter-spacing: 0.2em;
+
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.description{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+
+}
+
+.description .description_text span{
+    font-family: var(--font-family-RMono);
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 26px;
+
+    color: rgba(255, 255, 255, 0.8);
+
+}
+
+/*smaller screen view*/
+@media screen and (max-width: 1050px) {
+    .LogoText{
+        font-size: 20px;
+    }
+
+    .logoPhoto{
+        height: 70px;
+    
+    }
+    .Logo_name{
+        
+        font-size: 68px;
+        
+    }
+
+    .description .description_text span{
+        
+        font-size: 16px;
+    
+    }
+    
+
+}
+
+/*tablet screen view*/
+@media screen and (max-width: 770px){
+    .LogoText{
+        
+        font-size: 16px;
+    }
+
+    .logoPhoto{
+        margin-left: -10px;
+        margin-right: -10px;
+        height: 96px;
+    
+    }
+    .Logo_name{
+        
+        font-size: 64px;
+        letter-spacing: 0.1em;
+    }
+
+}
+
+/*mobile screen view*/
+@media screen and (max-width: 550px){
+
+    .Header_Text_Logo_Inner{
+        height: 9vh;
+    }
+    .LogoText{
+        
+        font-size: 12px;
+    }
+
+    .logoPhoto{
+        margin-left: -8px;
+        margin-right: -8px;
+        height: 60px;
+    
+    }
+    .Logo_name{
+        
+        font-size: 20px;
+    }
+
+    .description .description_text span{
+        
+        font-size: 10px;
+    
+    }
+
+}

@@ -1,0 +1,214 @@
+.text_Box{
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+}
+
+.text_Box_inner{
+    width: 70%;
+    height: 90%;
+    margin: auto;
+
+}
+
+.outputBox{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.TextBox_result{
+    margin: auto;
+    width: 100%;
+    
+}
+
+.outputBox .TextBox_result textarea{
+    width: 100%;
+    max-height: 100%;
+    position: relative;
+    resize:none;
+    padding: 20px;
+    height: 23em;
+
+    
+}
+
+.Micbutton{
+    height: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.Micbutton_inner{
+    margin: auto;
+    text-align: center;
+}
+
+.button{
+    transition: .1s ease-in-out;
+    border-radius:100%;
+    width: 100px;
+    height: 100px;
+    background: #00F2FF;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    
+}
+
+.button_bg{
+    position: absolute;
+    z-index: -1;
+    transition: .1s ease-in-out;
+    border-radius:100%;
+    width: 100px;
+    height: 100px;
+    background: #00F2FF;
+    display: flex;
+    justify-content: center;
+    opacity: 20%;
+
+}
+
+.button:hover{
+    transition: .1s ease-in-out;
+    transform: scale(1.09);
+}
+
+.fas{
+    margin: auto;
+    color: black;
+    font-size: 40px;
+}
+
+.Micbutton_inner span{
+    font-family: var(--font-family-R);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #FFFFFF;
+}
+
+
+
+
+
+
+
+/*smaller screen view*/
+@media screen and (max-width: 1050px) {
+    .outputBox .TextBox_result textarea{
+        
+        height: 17em;
+    
+        
+    }
+
+    .outputBox .TextBox_result textarea{
+       
+        height: 14em;
+        
+    }
+
+    .button{
+        width: 80px;
+        height: 80px;
+    }
+    .button_bg{
+        width: 80px;
+        height: 80px;
+    }
+
+    .Micbutton_inner span{
+        
+        font-size: 9px;
+    }
+}
+
+/*tablet screen view*/
+@media screen and (max-width: 770px){
+    .text_Box_inner{
+        height: 100%;
+    
+    }
+
+    .outputBox{
+        height: 75%;
+        
+    }
+
+    .outputBox .TextBox_result textarea{
+       
+        height: 30em;
+        
+    }
+
+
+    .Micbutton{
+        height: 25%;
+    }
+
+    .fas{
+        margin: auto;
+        color: black;
+        font-size: 30px;
+    }
+    
+
+}
+
+/*mobile screen view*/
+@media screen and (max-width: 550px){
+    .text_Box{
+        height: 50vh;
+    }
+
+    .text_Box_inner{
+        height: 100%;
+    
+    }
+
+    .outputBox{
+        height: 75%;
+
+        
+    }
+
+    .outputBox .TextBox_result textarea{
+       
+        height: 18em;
+        
+    }
+
+    .Micbutton{
+        height: 25%;
+    }
+    
+    .button{
+        width: 70px;
+        height: 70px;
+    }
+    .button_bg{
+        width: 70px;
+        height: 70px;
+    }
+    
+    .fas{
+        margin: auto;
+        color: black;
+        font-size: 30px;
+    }
+    
+    .Micbutton_inner span{
+        font-size: 10px;
+        line-height: 16px;
+    
+    }
+
+}
